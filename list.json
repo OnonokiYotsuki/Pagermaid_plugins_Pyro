@@ -1,0 +1,64 @@
+{
+    "list": [
+      {
+        "name": "autoChangeName",
+        "version": "1.0", 
+        "section": "profile", 
+        "maintainer": "defy", 
+        "size": "1.0 kb", 
+        "supported": true, 
+        "des_short": "", 
+        "des": "defy自制小名字" 
+      },
+      {
+        "name": "autoChangeNameEmoji",
+        "version": "1.0", 
+        "section": "profile", 
+        "maintainer": "defy", 
+        "size": "1.0 kb", 
+        "supported": true, 
+        "des_short": "", 
+        "des": "defy自制小名字Emoji版" 
+      },
+      {
+        "name": "autoChangeNameClock",
+        "version": "1.0", 
+        "section": "profile", 
+        "maintainer": "defy", 
+        "size": "1.0 kb", 
+        "supported": true, 
+        "des_short": "", 
+        "des": "defy自制小名字Clock版" 
+      },
+      {
+        "name": "memeGenerator",
+        "version": "1.0", 
+        "section": "chat", 
+        "maintainer": "defy", 
+        "size": "1.0 kb", 
+        "supported": true, 
+        "des_short": "表情生成", 
+        "des": "表情生成" 
+      },
+      {
+        "name": "test",
+        "version": "1.0", 
+        "section": "chat", 
+        "maintainer": "defy", 
+        "size": "1.0 kb", 
+        "supported": true, 
+        "des_short": "ceshi", 
+        "des": "  测试" 
+      },{
+        "name": "areply",
+        "version": "1.0", 
+        "section": "chat", 
+        "maintainer": "defy", 
+        "size": "1.0 kb", 
+        "supported": true, 
+        "des_short": "ceshi", 
+        "des": "关键词回复" 
+      }
+    ]
+  }
+  
