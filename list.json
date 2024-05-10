@@ -21,6 +21,16 @@
         "des": "24bit自制小名字Clock版" 
       },
       {
+        "name": "autoChangeNameYear",
+        "version": "1.0", 
+        "section": "profile", 
+        "maintainer": "24bit", 
+        "size": "1.0 kb", 
+        "supported": true, 
+        "des_short": "", 
+        "des": "24bit自制小名字年月日时分版" 
+      },
+      {
         "name": "admins",
         "version": "1.0",
         "section": "chat",
