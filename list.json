@@ -19,6 +19,16 @@
         "supported": true, 
         "des_short": "", 
         "des": "24bit自制小名字Clock版" 
+      },
+      {
+        "name": "atadmins",
+        "version": "1.0",
+        "section": "chat",
+        "maintainer": "24bit",
+        "size": "0.999 kb",
+        "supported": true,
+        "des_short": "一键 AT 本群管理员。",
+        "des": "一键 AT 本群管理员。\n指令：,admins"
       }
     ]
   }
