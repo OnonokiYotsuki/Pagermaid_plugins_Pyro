@@ -4,37 +4,37 @@
         "name": "autoChangeName",
         "version": "1.0", 
         "section": "profile", 
-        "maintainer": "defy", 
+        "maintainer": "24bit", 
         "size": "1.0 kb", 
         "supported": true, 
         "des_short": "", 
-        "des": "defy自制小名字" 
+        "des": "24bit自制小名字" 
       },
       {
         "name": "autoChangeNameEmoji",
         "version": "1.0", 
         "section": "profile", 
-        "maintainer": "defy", 
+        "maintainer": "24bit", 
         "size": "1.0 kb", 
         "supported": true, 
         "des_short": "", 
-        "des": "defy自制小名字Emoji版" 
+        "des": "24bit自制小名字Emoji版" 
       },
       {
         "name": "autoChangeNameClock",
         "version": "1.0", 
         "section": "profile", 
-        "maintainer": "defy", 
+        "maintainer": "24bit", 
         "size": "1.0 kb", 
         "supported": true, 
         "des_short": "", 
-        "des": "defy自制小名字Clock版" 
+        "des": "24bit自制小名字Clock版" 
       },
       {
         "name": "memeGenerator",
         "version": "1.0", 
         "section": "chat", 
-        "maintainer": "defy", 
+        "maintainer": "24bit", 
         "size": "1.0 kb", 
         "supported": true, 
         "des_short": "表情生成", 
@@ -44,7 +44,7 @@
         "name": "test",
         "version": "1.0", 
         "section": "chat", 
-        "maintainer": "defy", 
+        "maintainer": "24bit", 
         "size": "1.0 kb", 
         "supported": true, 
         "des_short": "ceshi", 
@@ -53,7 +53,7 @@
         "name": "areply",
         "version": "1.0", 
         "section": "chat", 
-        "maintainer": "defy", 
+        "maintainer": "24bit", 
         "size": "1.0 kb", 
         "supported": true, 
         "des_short": "ceshi", 
