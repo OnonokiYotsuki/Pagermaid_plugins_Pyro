@@ -21,7 +21,7 @@
         "des": "24bit自制小名字Clock版" 
       },
       {
-        "name": "atadmins",
+        "name": "admins",
         "version": "1.0",
         "section": "chat",
         "maintainer": "24bit",
