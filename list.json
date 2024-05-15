@@ -40,6 +40,17 @@
         "des_short": "一键 AT 本群管理员。",
         "des": "一键 AT 本群管理员。\n指令：,admins"
       }
+      ,
+      {
+        "name": "noCV",
+        "version": "1.0",
+        "section": "chat",
+        "maintainer": "24bit",
+        "size": "0.999 kb",
+        "supported": true,
+        "des_short": "禁止转发的消息。",
+        "des": "禁止转发发送的消息\n指令：,nof"
+      }
     ]
   }
   
