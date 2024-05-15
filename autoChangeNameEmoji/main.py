@@ -9,8 +9,8 @@ from emoji import emojize
 from pagermaid import logs, scheduler, bot
 
 
-emoji_num = {str(i): emojize(f":{['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'][i]}:", language="alias") for i in range(10)}
-all_time_emoji_name = [
+EMOJI_NUM = {str(i): emojize(f":{['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'][i]}:", language="alias") for i in range(10)}
+TIME_EMOJI_NAME = [
     "clock12",
     "clock1230",
     "clock1",
@@ -36,7 +36,7 @@ all_time_emoji_name = [
     "clock11",
     "clock1130",
 ]
-time_emoji_symb = [emojize(f":{s}:", language="alias") for s in all_time_emoji_name]
+TIME_EMOJI_SYMB = [emojize(f":{s}:", language="alias") for s in TIME_EMOJI_NAME]
 
 @scheduler.scheduled_job("cron", second=0, id="autochangename")
 async def change_name_auto():
@@ -44,9 +44,9 @@ async def change_name_auto():
         now = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=8)))
         hour, minute = now.hour, now.minute
         shift = 1 if int(minute) > 30 else 0
-        clock_emoji = time_emoji_symb[(int(hour) % 12) * 2 + shift]
-        hour_emoji = "".join(emoji_num[digit] for digit in f"{hour:02}")
-        minute_emoji = "".join(emoji_num[digit] for digit in f"{minute:02}")
+        clock_emoji = TIME_EMOJI_SYMB[(int(hour) % 12) * 2 + shift]
+        hour_emoji = "".join(EMOJI_NUM[digit] for digit in f"{hour:02}")
+        minute_emoji = "".join(EMOJI_NUM[digit] for digit in f"{minute:02}")
         new_name = f"{hour_emoji}:{minute_emoji} {clock_emoji}"
         
         await bot.update_profile(last_name=new_name)
