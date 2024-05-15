@@ -19,6 +19,7 @@ async def change_name_auto():
         
         await bot.update_profile(last_name=new_name)
         if (await bot.get_me()).last_name != new_name:
-            raise Exception("Failed to update last_name")
+            raise Exception("修改 last_name 失败")
     except Exception as e:
-        await logs.info(f"Update failed!\n{''.join(traceback.format_exception(e))}")
+        trac = "\n".join(traceback.format_exception(e))
+        await logs.info(f"更新失败! \n{trac}")
