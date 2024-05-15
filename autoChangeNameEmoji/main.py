@@ -4,15 +4,15 @@ from emoji import emojize
 from pagermaid import logs, scheduler, bot
 
 EMOJI_NUM = {str(i): emojize(f":{['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'][i]}:", language="alias") for i in range(10)}
-EMOJI_CLOCK = [emojize(f":clock{i % 12}{'30' if i % 2 else ''}:", language="alias") for i in range(24)]
+EMOJI_CLOCK = [f"clock{h}" if m == 0 else f"clock{h}30" for h in range(1, 13) for m in range(0, 60, 30)]
 
 @scheduler.scheduled_job("cron", second=0, id="autochangename")
 async def change_name_auto():
     try:
         now = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=8)))
         hour, minute = now.hour, now.minute
-        shift = 1 if minute > 30 else 0
-        clock_emoji = EMOJI_CLOCK[(hour % 12) * 2 + shift]
+        shift = 1 if int(minute) > 30 else 0
+        clock_emoji= EMOJI_CLOCK[(int(hour) % 12) * 2 + shift]
         hour_emoji = "".join(EMOJI_NUM[digit] for digit in f"{hour:02}")
         minute_emoji = "".join(EMOJI_NUM[digit] for digit in f"{minute:02}")
         new_name = f"{hour_emoji}:{minute_emoji} {clock_emoji}"
